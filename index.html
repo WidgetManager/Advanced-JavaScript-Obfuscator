@@ -1,0 +1,31 @@
+<form class="uk-form-stacked" id="obfuscator-form">
+      <label class="uk-form-label" for="js-code">Enter Your JavaScript Code:</label>
+      <textarea id="js-code" class="uk-textarea" rows="8" placeholder="Paste your JavaScript code here..."></textarea>
+
+      <div class="options-label">Obfuscation Options:</div>
+      <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="compact" checked=''> Compact</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="simplify" checked=''> Simplify</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="self-defending" checked=''> Self-Defending</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="debug-protections" checked=''> Debug Protections</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="dead-code-injection"> Dead Code Injection</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="string-array"> String Array</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="rotate-string-array" checked=''> Rotate String Array</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="string-array-index-shift"> String Array Index Shift</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="domain-lock"> Domain Lock</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="split-strings"> Split Strings</label>
+        <label class="uk-checkbox-label"><input class="uk-checkbox" type="checkbox" id="shuffle-string-array" checked=''> Shuffle String Array</label>
+      </div>
+
+      <label class="uk-form-label" for="domain-input" id="domain-input-label" style="display: none;">Enter Allowed Domains (comma-separated):</label>
+      <input type="text" id="domain-input" class="uk-input" placeholder="e.g., example.com, test.com" style="display: none;">
+
+      <button type="button" id="obfuscate-btn" class="uk-button uk-button-primary uk-margin-top">Obfuscate Code</button>
+    </form>
+
+    <h2 class="uk-heading-line uk-margin-top"><span>Obfuscated Code:</span></h2>
+    <div id="output" class="output">
+      <pre></pre>
+      <span id="copy-icon" class="uk-icon copy-icon" uk-icon="icon: copy; ratio: 1.5"></span>
+    </div>
+  </div>
